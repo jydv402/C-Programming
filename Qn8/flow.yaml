@@ -1,0 +1,25 @@
+Start
+  |
+  ↓
+Read number
+  |
+  ↓
+Calculate factorial of each digit
+  |
+  ↓
+Sum up the factorials of all digits
+  |
+  ↓
+if (sum == number)
+  |
+  ↓
+Display "Strong number"
+  |
+  ↓
+else
+  |
+  ↓
+Display "Not a strong number"
+  |
+  ↓
+End
