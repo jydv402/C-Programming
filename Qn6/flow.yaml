@@ -1,0 +1,95 @@
+   +------------------------+
+   |   Start the Program    |
+   +------------+-----------+
+                |
+                v
+   +------------------------+
+   |   Declare num variable |
+   +------------+-----------+
+                |
+                v
+   +------------------------+
+   | Declare and Initialize |
+   |   isPrime variable     |
+   +------------+-----------+
+                |
+                v
+   +------------------------+
+   |   Prompt for Input     |
+   +------------+-----------+
+                |
+                v
+   +------------------------+
+   |    Read Input (num)    |
+   +------------+-----------+
+                |
+                v
+   +------------------------+
+   | Check if num <= 1      |
+   +------------+-----------+
+                |
+     +----------v---------+
+     |         Yes        |
+     |   Set isPrime = 0  |
+     +----------+---------+
+                |
+                v
+   +------------------------+
+   | Iterate from 2 to num-1|
+   +------------+-----------+
+                |
+     +----------v---------+
+     |    Check if num % i  |
+     |         == 0        |
+     +----------+---------+
+                |
+     +----------v---------+
+     |         Yes        |
+     |   Set isPrime = 0  |
+     +----------+---------+
+                |
+     +----------v---------+
+     |         No         |
+     |      Continue      |
+     +----------+---------+
+                |
+                v
+   +------------------------+
+   |     Check isPrime      |
+   +------------+-----------+
+                |
+     +----------v---------+
+     |         Yes        |
+     |  Print num is prime |
+     +----------+---------+
+                |
+     +----------v---------+
+     |         No         |
+     | Print num is not    |
+     |      prime         |
+     +----------+---------+
+                |
+                v
+   +------------------------+
+   |      End Program      |
+   +------------------------+
+
+
+
+
+1. Start the program.
+2. Declare the variable •num* to store the input number.
+3. Declare and initialize the variable isPxime to 1 (assuming the number is prime).
+4. Prompt the user to enter a natural number.
+5. Read and store the input number in the variable num .
+6. Check if • num' is less than or equal to I.
+    a. If true, set • isPrime• to O (the number is not prime).
+    b. If false, proceed to the next step.
+7. Iterate from 2 to one less than •num' using the variable
+    a. Check if •num • is divisible by "i •
+      i. If true, set to O (the number is not prime) and break the loop.
+      ii. If false, continue to the next iteration.
+8. After the loop ends, check the value of isPrime• .
+    a. If *isPxime• is true, print that the number is prime.
+    b. isPrime is false, print that the number is not prime.
+9. End the program.

@@ -11,7 +11,7 @@ void main()
 {
     int mark;
 
-    printf("Enter the mark: ");
+    printf("\nEnter the mark: ");
     scanf("%d", &mark);
 
     if (mark < 0)
