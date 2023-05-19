@@ -1,0 +1,13 @@
+Start
+  |
+  ↓
+Read a, b, c, d, e, f, and g
+  |
+  ↓
+solution = ((a - b / c * d + e) * (f + g))
+  |
+  ↓
+Display solution
+  |
+  ↓
+End

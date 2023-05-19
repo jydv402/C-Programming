@@ -1,0 +1,16 @@
+Start
+  |
+  ↓
+Read a,b,c
+  |
+  ↓
+if (a>b && a>c) = a is largest
+  |
+  ↓
+else if (b>a && b>c) = b is largest
+  |
+  ↓
+else c is largest
+  |
+  ↓
+End

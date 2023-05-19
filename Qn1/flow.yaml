@@ -1,0 +1,15 @@
+Start
+    |
+    ↓
+  Read radius
+    |
+    ↓
+Calculate area = 3.14 * radius * radius
+    |
+    ↓
+   Display area
+    |
+    ↓
+  End
+
+
