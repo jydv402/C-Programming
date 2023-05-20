@@ -4,6 +4,43 @@
 
 #include <stdio.h>
 
-void main(){
-    
+void main()
+{
+
+    int num, orgNum, digit, fact, sum;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num < 0)
+    {
+        printf("Invalid input. Please enter a positive number.\n");
+    }
+
+    orgNum = num;
+    sum = 0;
+
+    while (num)
+    {
+        digit = num % 10;
+        fact = 1;
+
+        while (digit)
+        {
+            fact = fact * digit;
+            digit--;
+        }
+
+        sum = sum + fact;
+        num = num / 10;
+    }
+
+    if (sum == orgNum)
+    {
+        printf("The number is a Strong Number");
+    }
+    else
+    {
+        printf("The number is not a Strong Number");
+    }
 }

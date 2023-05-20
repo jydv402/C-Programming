@@ -1,0 +1,20 @@
+Start
+  |
+  ↓
+Read number
+  |
+  ↓
+Extract first digit
+  |
+  ↓
+Extract last digit
+  |
+  ↓
+Calculate sum of first and last digits
+  |
+  ↓
+Display sum
+  |
+  ↓
+End
+

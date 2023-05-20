@@ -1,0 +1,25 @@
+Start
+  |
+  ↓
+Read N
+  |
+  ↓
+Initialize count = 0
+  |
+  ↓
+while (N > 0)
+  |
+  ↓
+Divide N by 10
+  |
+  ↓
+Increment count by 1
+  |
+  ↓
+Continue loop until N becomes 0
+  |
+  ↓
+Display count
+  |
+  ↓
+End

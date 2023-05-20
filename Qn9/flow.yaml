@@ -1,0 +1,25 @@
+Start
+  |
+  ↓
+Read N
+  |
+  ↓
+Initialize sum = 0
+  |
+  ↓
+Iterate i from 2 to N (inclusive) with step size 2
+  |
+  ↓
+if (i is even)
+  |
+  ↓
+Add i to sum
+  |
+  ↓
+Continue loop
+  |
+  ↓
+Display sum
+  |
+  ↓
+End

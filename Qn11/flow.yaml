@@ -1,0 +1,70 @@
+Start
+  |
+  ↓
+Read choice of operation
+  |
+  ↓
+Read two numbers
+  |
+  ↓
+switch (choice)
+  |
+  ↓
+Case 1: Addition
+  |
+  ↓
+Add the numbers
+  |
+  ↓
+Display the result
+  |
+  ↓
+Break
+  |
+  ↓
+Case 2: Subtraction
+  |
+  ↓
+Subtract the second number from the first number
+  |
+  ↓
+Display the result
+  |
+  ↓
+Break
+  |
+  ↓
+Case 3: Multiplication
+  |
+  ↓
+Multiply the numbers
+  |
+  ↓
+Display the result
+  |
+  ↓
+Break
+  |
+  ↓
+Case 4: Division
+  |
+  ↓
+Check if the second number is zero
+  |
+  ↓
+If not zero, divide the first number by the second number
+  |
+  ↓
+Display the result
+  |
+  ↓
+Break
+  |
+  ↓
+Default: Invalid choice
+  |
+  ↓
+Display error message
+  |
+  ↓
+End
