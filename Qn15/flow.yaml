@@ -1,0 +1,23 @@
+
+Start
+  |
+  ↓
+Initialize max with the first element of the array
+  |
+  ↓
+Iterate through the remaining elements of the array
+  |
+  ↓
+if current element > max
+  |
+  ↓
+Update max with the current element
+  |
+  ↓
+Continue iterating through all elements
+  |
+  ↓
+Display max as the largest element
+  |
+  ↓
+End

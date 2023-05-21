@@ -1,0 +1,46 @@
+Start
+  |
+  ↓
+Read N
+  |
+  ↓
+Initialize power = 1, result = 0
+  |
+  ↓
+while (power <= N)
+  |
+  ↓
+if (N % power == 0)
+  |
+  ↓
+Divide N by power
+  |
+  ↓
+if (N == 1)
+  |
+  ↓
+Set result = 1
+  |
+  ↓
+Break the loop
+  |
+  ↓
+Multiply power by 2
+  |
+  ↓
+Continue loop
+  |
+  ↓
+if (result == 1)
+  |
+  ↓
+Display "Yes, the number can be expressed as a power of 2"
+  |
+  ↓
+else
+  |
+  ↓
+Display "No, the number cannot be expressed as a power of 2"
+  |
+  ↓
+End
