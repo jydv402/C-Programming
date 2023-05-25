@@ -27,5 +27,5 @@ void main()
     //     sum = sum+i;
     // }
 
-    printf("The sum of all even numbers upto %d is equal to %d", org, sum);
+    printf("The sum of all even numbers upto %d is %d", org, sum);
 }

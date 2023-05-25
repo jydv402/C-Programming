@@ -3,18 +3,27 @@
 // For example 8 can be expressed as 2^3.
 
 #include <stdio.h>
-void main()
+int main()
 {
-    int N;
-    int power = 1;
-    int rslt = 0;
+    int N, org;
+    int e = 0;
 
     printf("Enter the number here: ");
     scanf("%d", &N);
 
-    while (power <= N)
+    org = N;
+
+    while (N > 1)
     {
-        
+        if (N % 2 != 0)
+        {
+            printf("The number %d cannot be expressed as a power of 2", org);
+            return 0;
+        }
+        e++;
+        N = N / 2;
     }
-    printf("%d", rslt);
+
+    printf("The number %d can be expressed as 2^%d.", org, e);
+    return 0;
 }

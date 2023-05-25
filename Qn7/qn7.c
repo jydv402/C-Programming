@@ -11,11 +11,18 @@ void main()
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    while (i <= num)
+    if (num >= 0)
     {
-        factorial = factorial * i;
-        i++;
+        while (i <= num)
+        {
+            factorial = factorial * i;
+            i++;
+        }
+        printf("The factorial of %d is %d\n", num, factorial);
     }
 
-    printf("The factorial of %d is %d\n", num, factorial);
+    else
+    {
+        printf("The number cannot be negative.\n");
+    }
 }
