@@ -28,7 +28,7 @@ void main()
     }
 
     // Print the result
-    if (isPrime)
+    if (isPrime = 1)
     {
         printf("%d is a prime number.\n", num);
     }
