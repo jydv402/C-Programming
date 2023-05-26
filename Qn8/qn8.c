@@ -7,7 +7,7 @@
 void main()
 {
 
-    int num, orgNum, digit, fact, sum;
+    int num, orgNum, digit, fact, sum = 0;
 
     printf("Enter a number: ");
     scanf("%d", &num);
@@ -18,7 +18,6 @@ void main()
     }
 
     orgNum = num;
-    sum = 0;
 
     while (num)
     {
@@ -45,6 +44,6 @@ void main()
     // }
 
     sum == orgNum
-        ? printf("%d is a Strong Number",orgNum)
-        : printf("%d is not a Strong Number",orgNum);
+        ? printf("%d is a Strong Number", orgNum)
+        : printf("%d is not a Strong Number", orgNum);
 }
