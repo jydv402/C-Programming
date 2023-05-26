@@ -35,12 +35,16 @@ void main()
         num = num / 10;
     }
 
-    if (sum == orgNum)
-    {
-        printf("The number is a Strong Number");
-    }
-    else
-    {
-        printf("The number is not a Strong Number");
-    }
+    // if (sum == orgNum)
+    // {
+    //     printf("The number is a Strong Number");
+    // }
+    // else
+    // {
+    //     printf("The number is not a Strong Number");
+    // }
+
+    sum == orgNum
+        ? printf("%d is a Strong Number",orgNum)
+        : printf("%d is not a Strong Number",orgNum);
 }
