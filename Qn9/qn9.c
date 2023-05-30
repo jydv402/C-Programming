@@ -12,20 +12,11 @@ void main()
     scanf("%d", &org);
 
     n = org;
-    while (n >= 2)
-    {
-        if (n % 2 == 0)
-        {
-            sum = sum + n;
-        }
-        n--;
-    }
 
-    /*For loop has the same function*/
-    // for (int i = 2; i <= n; i = i+2)
-    // {
-    //     sum = sum+i;
-    // }
+    for (int i = 2; i <= n; i = i+2)
+    {
+        sum = sum+i;
+    }
 
     printf("The sum of all even numbers upto %d is %d", org, sum);
 }

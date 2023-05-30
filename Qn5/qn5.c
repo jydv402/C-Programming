@@ -31,7 +31,5 @@ void main()
         printf("B\n");
     }
     else
-    {
-        printf("Slow Learners\n");
-    }
+    {printf("Slow Learners\n");}
 }

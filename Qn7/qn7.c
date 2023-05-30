@@ -5,7 +5,7 @@
 void main()
 {
     int num;
-    int factorial = 1;
+    int factorial;
     int i = 1;
 
     printf("Enter a number: ");
@@ -13,6 +13,7 @@ void main()
 
     if (num >= 0)
     {
+        factorial = 1;
         while (i <= num)
         {
             factorial = factorial * i;
@@ -26,3 +27,4 @@ void main()
         printf("The number cannot be negative.\n");
     }
 }
+ 

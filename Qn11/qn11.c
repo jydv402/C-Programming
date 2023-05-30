@@ -10,10 +10,7 @@ void main()
     do
     {
         printf("\nChoose the operation:\n");
-        printf("1 => Addition\n");
-        printf("2 => Subtraction\n");
-        printf("3 => Multiplication\n");
-        printf("4 => Division\n");
+        printf("1 => Addition\n2 => Subtraction\n3 => Multiplication\n4 => Division\n");
 
         printf("Enter your choice (1-4): ");
         scanf("%d", &choice);

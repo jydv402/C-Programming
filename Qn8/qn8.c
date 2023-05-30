@@ -12,19 +12,14 @@ void main()
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if (num < 0)
-    {
-        printf("Invalid input. Please enter a positive number.\n");
-    }
-
     orgNum = num;
 
-    while (num)
+    while (num > 0)
     {
         digit = num % 10;
         fact = 1;
 
-        while (digit)
+        while (digit > 0)
         {
             fact = fact * digit;
             digit--;
@@ -34,6 +29,11 @@ void main()
         num = num / 10;
     }
 
+    sum == orgNum
+        ? printf("%d is a Strong Number", orgNum)
+        : printf("%d is not a Strong Number", orgNum);
+}
+
     // if (sum == orgNum)
     // {
     //     printf("The number is a Strong Number");
@@ -42,8 +42,3 @@ void main()
     // {
     //     printf("The number is not a Strong Number");
     // }
-
-    sum == orgNum
-        ? printf("%d is a Strong Number", orgNum)
-        : printf("%d is not a Strong Number", orgNum);
-}

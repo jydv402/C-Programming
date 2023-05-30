@@ -6,7 +6,7 @@
 
 void main(){
     int a,b,c,d,e,f,g;
-    float rslt;
+    float rslt=0;
 
     printf("Enter the value of a : ");
     scanf("%d",&a);
@@ -31,5 +31,5 @@ void main(){
 
     rslt = ((a - b / c * d + e) * (f + g));
 
-    printf("The solution is %0.2f\n", rslt);
+    printf("\nThe solution is %0.2f\n", rslt);
 }

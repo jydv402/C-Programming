@@ -19,10 +19,10 @@ void main()
 
     ld = num % 10;
 
+    sum = ld + fd;
+
     printf("\nThe first digit is %d\n", fd);
     printf("The second digit is %d\n", ld);
 
-    sum = ld + fd;
-
-    printf("\nSum of the 1st and 2nd digits = %d", sum);
+    printf("\nSum of 1st and 2nd digits = %d", sum);
 }
