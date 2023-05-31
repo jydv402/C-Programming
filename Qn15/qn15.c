@@ -12,11 +12,13 @@ void main()
 
     for (int i = 0; i < size; i++)
     {
-        printf("\nEnter the elements of the array: ");
+        printf("\nEnter the element number %d => ",i+1);
         scanf("%d", &ar[i]);
     }
 
-    for (int i = 0; i < size; i++)
+    lrg = ar[0];
+
+    for (int i = 1; i < size; i++)
     {
         if (ar[i] > lrg)
         {
