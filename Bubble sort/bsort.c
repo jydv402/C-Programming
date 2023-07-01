@@ -48,7 +48,7 @@ int main()
                 }
             }
         }
-        printf("\nYou chose ascending order.");
+        printf("\n\nYou chose ascending order.");
     }
     // descending
     if (ord == 2)
@@ -65,12 +65,12 @@ int main()
                 }
             }
         }
-        printf("\nYou chose decending order.");
+        printf("\n\nYou chose decending order.");
     }
 
     // Printing after sort
 
-    printf("\n\nThe sorted array is\n");
+    printf("\nThe sorted array is\n");
     for (i = 0; i < n; i++)
     {
         printf("%d\t", a[i]);
