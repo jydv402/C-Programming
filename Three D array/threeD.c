@@ -1,7 +1,7 @@
 #include <stdio.h>
 void main()
 {
-    int opert;
+    int opert, chooseD;
     int i, j, a[99][99], n, m;
     printf("\n\n");
     printf("                                    _____  _             \n");
@@ -12,42 +12,54 @@ void main()
     printf(" /_/    \\_\\_|  |_|  \\__,_|\\__, |(_)|_|    |_|\\__,_|\\__, |\n");
     printf("                           __/ |                    __/ |\n");
     printf("                          |___/                    |___/ \n");
-    printf("\n\n\t1 => Normal Integer Array\n");
-    printf("\t2 => Character array\n");
 
+    printf("\n\n\t1 => 1D Array\n");
+    printf("\t2 => 2D Array\n");
     printf("\n\nEnter your option : ");
-    scanf("%d", &opert);
-    printf("\n\n");
+    scanf("%d", &chooseD);
 
-    switch (opert)
+    switch (chooseD)
     {
-    case 1:
-        // Normal integer array
-        printf("Enter the array row and column: ");
-        scanf("%d %d", &m, &n);
+    case 2:
+        printf("\n\n\t1 => Normal Integer Array\n");
+        printf("\t2 => Character array\n");
 
-        for (i = 0; i < m; i++)
-        {
-            for (j = 0; j < n; j++)
-            {
-                printf("Enter the element: ");
-                scanf("%d", &a[i][j]);
-            }
-        }
-
+        printf("\n\nEnter your option : ");
+        scanf("%d", &opert);
         printf("\n\n");
-        for (i = 0; i < m; i++)
-        {
-            printf("|\t");
-            for (j = 0; j < n; j++)
-            {
-                printf("%d\t", a[i][j]);
-            }
-            printf("|");
-            printf("\n");
-        }
-        break;
 
+        switch (opert)
+        {
+        case 1:
+            // Normal integer array
+            printf("Enter the array row and column: ");
+            scanf("%d %d", &m, &n);
+
+            for (i = 0; i < m; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    printf("Enter the element: ");
+                    scanf("%d", &a[i][j]);
+                }
+            }
+
+            printf("\n\n");
+            for (i = 0; i < m; i++)
+            {
+                printf("|\t");
+                for (j = 0; j < n; j++)
+                {
+                    printf("%d\t", a[i][j]);
+                }
+                printf("|");
+                printf("\n");
+            }
+            break;
+
+        default:
+            printf("Please select the right option and retry!!!");
+        }
     default:
         printf("Please select the right option and retry!!!");
     }
