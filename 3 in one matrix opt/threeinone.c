@@ -30,7 +30,7 @@ int main()
             {
                 for (j = 0; j < n2; j++)
                 {
-                    printf("\tEnter the element A[%d][%d]:", i, j);
+                    printf("\tEnter the element B[%d][%d]:", i, j);
                     scanf("%d", &B[i][j]);
                 }
             }
@@ -105,10 +105,10 @@ int main()
                 for (i = 0; i < m1; i++)
                 {
                     printf("\t");
-                    for (j = 0; j < n1; j++)
+                    for (j = 0; j < n2; j++)
                     {
                         C[i][j] = 0;
-                        for (k = 0; k < m1; k++)
+                        for (k = 0; k < n1; k++)
                         {
                             C[i][j] = C[i][j] + A[i][k] * B[k][j];
                         }
