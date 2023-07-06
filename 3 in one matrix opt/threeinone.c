@@ -11,6 +11,14 @@ int main()
         printf("\nEnter an option : ");
         scanf("%d", &opt);
 
+        // if (opt>3)
+        // {
+        //     rep = 1;
+        //     printf("\nSelect a valid option and please retry...");
+        //     goto
+        // }
+        
+
         printf("\nEnter the order of first matrix:");
         scanf("%d%d", &m1, &n1);
         for (i = 0; i < m1; i++)
