@@ -60,19 +60,26 @@ int main()
                 printf("\n");
             }
         }
+        printf("\n");
         do
         {
+            if (rep == 2)
+            {
+                printf("\n\nChoose an operation from the following\n\t1 => Sum of two matrices\n\t2 => Product of two matrices\n\t3 => Transpose of a matrix");
+                printf("\nEnter an option : ");
+                scanf("%d", &opt);
+            }
 
             switch (opt)
             {
             case 1:
                 if ((m1 != m2) || (n1 != n2))
                 {
-                    printf("Matrix addition is not possible");
+                    printf("\nMatrix addition is not possible");
                 }
                 else
                 {
-                    printf("The sum of the two matrices is => \n");
+                    printf("\nThe sum of the two matrices is => \n");
                     C[i][j] = 0;
 
                     for (i = 0; i < m2; i++)
@@ -91,10 +98,10 @@ int main()
             case 2:
                 if (n1 != m2)
                 {
-                    printf("Matrix multiplication cannot be applied..");
+                    printf("\nMatrix multiplication cannot be applied..");
                     break;
                 }
-                printf("The product of the two matrices is => \n");
+                printf("\nThe product of the two matrices is => \n");
                 for (i = 0; i < m1; i++)
                 {
                     printf("\t");
@@ -112,11 +119,11 @@ int main()
                 break;
 
             case 3:
-                printf("Transpose of the first matrix is\n");
-                for (i = 0; i < m1; i++)
+                printf("\nTranspose of the first matrix is\n");
+                for (i = 0; i < n1; i++)
                 {
                     printf("\t");
-                    for (j = 0; j < n1; j++)
+                    for (j = 0; j < m1; j++)
                     {
                         printf("%d\t", A[j][i]);
                     }
@@ -125,7 +132,7 @@ int main()
                 break;
 
             default:
-                printf("Select a valid option and please retry...");
+                printf("\nSelect a valid option and please retry...");
                 break;
             }
             printf("\n\n\t1 => Restart the program and use new values");
@@ -133,7 +140,6 @@ int main()
             {
                 printf("\n\t2 => Execute another operation using the same values");
             }
-
             printf("\nEnter choice: ");
             scanf("%d", &rep);
 
