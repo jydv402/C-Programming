@@ -11,13 +11,11 @@ int main()
         printf("\nEnter an option : ");
         scanf("%d", &opt);
 
-        // if (opt>3)
-        // {
-        //     rep = 1;
-        //     printf("\nSelect a valid option and please retry...");
-        //     goto
-        // }
-        
+        if (opt > 3)
+        {
+            printf("\nSelect a valid option and please retry...");
+            return main();
+        }
 
         printf("\nEnter the order of first matrix:");
         scanf("%d%d", &m1, &n1);
@@ -68,90 +66,75 @@ int main()
                 printf("\n");
             }
         }
-        printf("\n");
-        do
+
+        switch (opt)
         {
-            if (rep == 2)
+        case 1:
+            if ((m1 != m2) || (n1 != n2))
             {
-                printf("\n\nChoose an operation from the following\n\t1 => Sum of two matrices\n\t2 => Product of two matrices\n\t3 => Transpose of a matrix");
-                printf("\nEnter an option : ");
-                scanf("%d", &opt);
+                printf("\nMatrix addition is not possible");
             }
-
-            switch (opt)
+            else
             {
-            case 1:
-                if ((m1 != m2) || (n1 != n2))
-                {
-                    printf("\nMatrix addition is not possible");
-                }
-                else
-                {
-                    printf("\nThe sum of the two matrices is => \n");
-                    C[i][j] = 0;
+                printf("\nThe sum of the two matrices is => \n");
+                C[i][j] = 0;
 
-                    for (i = 0; i < m2; i++)
-                    {
-                        printf("\t");
-                        for (j = 0; j < n2; j++)
-                        {
-                            C[i][j] = A[i][j] + B[i][j];
-                            printf("%d \t", C[i][j]);
-                        }
-                        printf("\n");
-                    }
-                }
-                break;
-
-            case 2:
-                if (n1 != m2)
-                {
-                    printf("\nMatrix multiplication cannot be applied..");
-                    break;
-                }
-                printf("\nThe product of the two matrices is => \n");
-                for (i = 0; i < m1; i++)
+                for (i = 0; i < m2; i++)
                 {
                     printf("\t");
                     for (j = 0; j < n2; j++)
                     {
-                        C[i][j] = 0;
-                        for (k = 0; k < n1; k++)
-                        {
-                            C[i][j] = C[i][j] + A[i][k] * B[k][j];
-                        }
+                        C[i][j] = A[i][j] + B[i][j];
                         printf("%d \t", C[i][j]);
                     }
                     printf("\n");
                 }
-                break;
-
-            case 3:
-                printf("\nTranspose of the first matrix is\n");
-                for (i = 0; i < n1; i++)
-                {
-                    printf("\t");
-                    for (j = 0; j < m1; j++)
-                    {
-                        printf("%d\t", A[j][i]);
-                    }
-                    printf("\n");
-                }
-                break;
-
-            default:
-                printf("\nSelect a valid option and please retry...");
-                break;
             }
-            printf("\n\n\t1 => Restart the program and use new values");
-            if (opt != 3)
+            break;
+
+        case 2:
+            if (n1 != m2)
             {
-                printf("\n\t2 => Execute another operation using the same values");
+                printf("\nMatrix multiplication cannot be applied..");
+                break;
             }
-            printf("\nEnter choice: ");
-            scanf("%d", &rep);
+            printf("\nThe product of the two matrices is => \n");
+            for (i = 0; i < m1; i++)
+            {
+                printf("\t");
+                for (j = 0; j < n2; j++)
+                {
+                    C[i][j] = 0;
+                    for (k = 0; k < n1; k++)
+                    {
+                        C[i][j] = C[i][j] + A[i][k] * B[k][j];
+                    }
+                    printf("%d \t", C[i][j]);
+                }
+                printf("\n");
+            }
+            break;
 
-        } while (rep == 2);
+        case 3:
+            printf("\nTranspose of the first matrix is\n");
+            for (i = 0; i < n1; i++)
+            {
+                printf("\t");
+                for (j = 0; j < m1; j++)
+                {
+                    printf("%d\t", A[j][i]);
+                }
+                printf("\n");
+            }
+            break;
+
+        default:
+            printf("\nSelect a valid option and please retry...");
+            break;
+        }
+        printf("\n\n\t1 => Restart the program and use new values");
+        printf("\nEnter choice: ");
+        scanf("%d", &rep);
 
     } while (rep == 1);
     return 0;
