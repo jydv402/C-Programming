@@ -11,7 +11,7 @@ int reccur(int num)
         int lastdig = num % 10;
         int restdigs = num / 10;
         return lastdig + reccur(restdigs);
-        }
+    }
 }
 
 void main()
