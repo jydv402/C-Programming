@@ -22,7 +22,7 @@ void main()
     sum = ld + fd;
 
     printf("\nThe first digit is %d\n", fd);
-    printf("The second digit is %d\n", ld);
+    printf("The last digit is %d\n", ld);
 
-    printf("\nSum of 1st and 2nd digits = %d", sum);
+    printf("\nSum of first and last digits = %d", sum);
 }

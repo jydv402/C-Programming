@@ -29,18 +29,8 @@ int main()
         }
     }
 
-    // if (p > 2)
-    // {
-    //     printf("%d is not a Prime number.", n);
-    // }
-
-    // else
-    // {
-    //     printf("%d is a Prime number.", n);
-    // }
-
-    p > 2 
-    ? printf("%d is not a Prime number.", n) 
-    : printf("%d is a Prime number.", n);
+    p > 2
+        ? printf("%d is not a Prime number.", n)
+        : printf("%d is a Prime number.", n);
     return 0;
 }
