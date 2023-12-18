@@ -5,7 +5,7 @@ struct node
 {
 	int info;
 	struct node *LINK;
-} *START = NULL, *PTR = NULL, *PREV, *DIS, *NEWNODE;
+} *START = NULL, *PTR = NULL, *PREV, *DIS, *NEWNODE, *REP;
 
 void display()
 {
@@ -168,6 +168,45 @@ void dlt_atele()
 	}
 }
 
+void find_freq()
+{
+	// frequency of elements in the linked list
+	int freq = 0, v, a[50], top = -1;
+	PTR = START;
+	while (PTR != NULL)
+	{
+		v = PTR->info;
+		int isDuplicate = 0;
+		for (int i = 0; i <= top; i++)
+		{
+			if (v == a[i])
+			{
+				isDuplicate = 1;
+				break;
+			}
+		}
+		if (isDuplicate)
+		{
+			PTR = PTR->LINK;
+			continue;
+		}
+		top++;
+		a[top] = v;
+		REP = START;
+		while (REP != NULL)
+		{
+			if (v == REP->info)
+			{
+				freq++;
+			}
+			REP = REP->LINK;
+		}
+		printf("The frequency of %d is %d\n", v, freq);
+		freq = 0;
+		PTR = PTR->LINK;
+	}
+}
+
 void main()
 {
 	int ch;
@@ -175,7 +214,7 @@ void main()
 	do
 	{
 	st:
-		printf("\n\t1 => Display the list\n\t2 => Insert at the beginning\n\t3 => Insert at the end\n\t4 => Insert at a specified position\n\t5 => Delete from the begining\n\t6 => Delete from the end\n\t7 => Delete a particular element\n\t8 => Exit\n Enter your choice : ");
+		printf("\n\t1 => Display the list\n\t2 => Insert at the beginning\n\t3 => Insert at the end\n\t4 => Insert at a specified position\n\t5 => Delete from the begining\n\t6 => Delete from the end\n\t7 => Delete a particular element\n\t8 => Find frequency of elements in the list\n\t9 => Exit\n Enter your choice : ");
 		scanf("%d", &ch);
 
 		switch (ch)
@@ -209,12 +248,16 @@ void main()
 			break;
 
 		case 8:
-			printf("\nYou have chose to exit...\n");
+			find_freq();
+			break;
+
+		case 9:
+			printf("You have chose to exit\n");
 			break;
 
 		default:
 			printf("\nInvalid choice. Please retry...\n");
 			break;
 		}
-	} while (ch != 8);
+	} while (ch != 9);
 }
