@@ -36,7 +36,7 @@ char pop()
 void main()
 {
     printf("Enter the infix expression:\n\t ");
-    scanf("%s", q);
+    fgets(q, 100, stdin);
 
     while (q[i] != '\0')
     {

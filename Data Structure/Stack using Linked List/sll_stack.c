@@ -7,22 +7,12 @@ struct node
     struct node *LINK;
 } *START = NULL, *PTR = NULL, *PREV, *DIS, *NEWNODE;
 
-void display()
+void display(struct node *DIS)
 {
-    DIS = START;
     if (DIS == NULL)
-    {
-        printf("\nStack Underflow. Enter elements and retry.\n");
-    }
-    else
-    {
-        printf("\n");
-        while (DIS != NULL)
-        {
-            printf("\t%d", DIS->info);
-            DIS = DIS->LINK;
-        }
-    }
+        return;
+    display(DIS->LINK);
+    printf("\t%d", DIS->info);
 }
 
 void insert_end()
@@ -79,7 +69,7 @@ void dlt_end()
             PREV->LINK = NULL;
             free(PTR);
         }
-        }
+    }
 }
 
 void main()
@@ -100,8 +90,17 @@ void main()
             dlt_end();
             break;
         case 3:
-            display();
+        {
+            if (START == NULL)
+            {
+                printf("\nStack Underflow. Enter elements and retry.\n");
+            }
+            else
+            {
+                display(START);
+            }
             break;
+        }
         case 4:
             printf("You have chose to exit\n");
             break;

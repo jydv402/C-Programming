@@ -4,7 +4,8 @@
 // merge sort
 void merge(int a[], int lb, int mid, int ub)
 {
-    int i, r, j, k, m;
+    printf("\n\n%d\t%d\t%d\n\n", lb, mid, ub);
+    int i, j, k;
     i = lb;
     j = mid + 1;
     k = lb;
