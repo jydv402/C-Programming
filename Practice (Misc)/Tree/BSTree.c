@@ -67,6 +67,17 @@ void inorder(struct tree *adrs)
     }
 }
 
+
+void preorder(struct tree *adrs)
+{
+    if(adrs != NULL)
+    {
+        printf("\t%d",adrs -> info);
+        preorder(adrs -> lch);
+        preorder(adrs -> rch);
+    }
+}
+
 void main()
 {
     int ch;
@@ -83,6 +94,10 @@ void main()
 
             case 2:
                 inorder(start);
+                break;
+
+            case 4:
+                preorder(start);
                 break;
 
             case 3:
