@@ -75,6 +75,7 @@ void main()
                         while(CURR != NULL)
                         {
                             PREV = CURR;
+                            
                             if(x < CURR -> info)
                             {
                                 CURR = CURR->lchd;

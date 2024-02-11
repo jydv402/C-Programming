@@ -177,6 +177,7 @@ void find_freq()
 	{
 		v = PTR->info;
 		int isDuplicate = 0;
+
 		for (int i = 0; i <= top; i++)
 		{
 			if (v == a[i])
@@ -190,6 +191,7 @@ void find_freq()
 			PTR = PTR->LINK;
 			continue;
 		}
+		
 		top++;
 		a[top] = v;
 		REP = START;
