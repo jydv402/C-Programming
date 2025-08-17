@@ -2,6 +2,18 @@
 
 #include <stdio.h>
 
+int fact(int num)
+{
+    if (num == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return num * fact(num - 1);
+    }
+}
+
 void main()
 {
     int num;
@@ -13,13 +25,7 @@ void main()
 
     if (num >= 0)
     {
-        factorial = 1;
-        while (i <= num)
-        {
-            factorial = factorial * i;
-            i++;
-        }
-        printf("The factorial of %d is %d\n", num, factorial);
+        printf("The factorial of %d is %d\n", num, fact(num));
     }
 
     else
@@ -27,4 +33,3 @@ void main()
         printf("The number cannot be negative.\n");
     }
 }
- 

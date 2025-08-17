@@ -11,7 +11,16 @@ void main()
     {
         for (j = 1; j <= i; j++)
         {
-            printf("*");
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    for (i = 0; i < N; i++)
+    {
+        for (j = 0; j < i; j++)
+        {
+            printf("* ");
         }
         printf("\n");
     }

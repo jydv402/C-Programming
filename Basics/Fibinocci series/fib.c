@@ -34,7 +34,7 @@ void main()
         printf("\n\t");
         for (int i = 0; i < x; i++)
         {
-            printf("%d\n", fib(i));
+            printf("%d\t", fib(i));
         }
     }
 }
